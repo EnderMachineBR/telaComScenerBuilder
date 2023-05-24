@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ScrollBar?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <CheckBox mnemonicParsing="false" text="CheckBox" BorderPane.alignment="CENTER" />
+   </top>
+   <left>
+      <Accordion BorderPane.alignment="CENTER">
+        <panes>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <RadioButton layoutX="57.0" layoutY="88.0" mnemonicParsing="false" text="RadioButton" />
+                  <RadioButton mnemonicParsing="false" text="RadioButton" />
+                  <RadioButton layoutX="57.0" layoutY="129.0" mnemonicParsing="false" text="RadioButton" />
+                  <RadioButton layoutX="14.0" layoutY="14.0" mnemonicParsing="false" text="RadioButton" />
+                  <RadioButton mnemonicParsing="false" text="RadioButton" />
+                  <RadioButton layoutX="36.0" layoutY="46.0" mnemonicParsing="false" text="RadioButton" />
+                  <RadioButton layoutX="36.0" layoutY="46.0" mnemonicParsing="false" text="RadioButton" />
+               </children>
+            </AnchorPane>
+          <TitledPane animated="false" text="Backup agendados">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <RadioButton layoutX="48.0" layoutY="68.0" mnemonicParsing="false" text="RadioButton" />
+                        <RadioButton layoutX="57.0" layoutY="81.0" mnemonicParsing="false" text="RadioButton" />
+                        <ProgressIndicator layoutX="50.0" layoutY="72.0" progress="0.0" />
+                        <ScrollBar layoutX="172.0" layoutY="96.0" orientation="VERTICAL" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </TitledPane>
+          <TitledPane animated="false" text="Historico de backups">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+            </content>
+          </TitledPane>
+        </panes>
+      </Accordion>
+   </left>
+   <center>
+      <TableView prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn prefWidth="75.0" text="C1" />
+          <TableColumn prefWidth="75.0" text="C2" />
+        </columns>
+      </TableView>
+   </center>
+</BorderPane>
